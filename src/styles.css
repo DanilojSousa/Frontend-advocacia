@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+#content_home{
+    .menu_fixo{
+        background-color: #BD8E4C!important;
+    }
+    .menu{
+        background-color: white!important;
+    }
+}
+mat-icon, .button, .titulo_sobre_adovogado, .content_rodape h3{
+    color: #715229!important;
+}
+.blocos .bloco:hover, .servico_bloco:hover, .button:hover, .caixa_texto, .button_contato, .dados_desenvolvedor, .conteudo_home button:hover {
+    background-color: #715229!important;
+}
+.button_contato mat-icon{
+    color: white!important;
+}
+.divider, .conteudo_home button, .card:hover{
+    border: 1px solid #5e4423!important;
+}
+
+a, p, button, h1, h2, h3, h4, h5,h6{
+    line-height: 1.5!important;
+    letter-spacing: 0.05em!important;
+    font-family: Georgia!important;
+    user-select: none;
+}
+.titulo_servico{
+    color: #715229!important;
+}
+.mat-mdc-menu-content{
+    background-color: #715229!important;
+    button{
+        color: white!important;
+    }
+}
+.menus a{
+    color: #715229!important;
+}
+.mat-dialog-container{
+    max-height: 90vh!important; 
+}

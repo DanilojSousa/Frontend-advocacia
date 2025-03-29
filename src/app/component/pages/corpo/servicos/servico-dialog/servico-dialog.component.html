@@ -1,0 +1,225 @@
+
+<div class="content_dialog">
+    <div class="close">
+        <mat-icon (click)="close()">close_24</mat-icon>
+    </div>
+    @if(data.index === 1){  
+        <div>
+            <h3 class="titulo_servico">Direito Civil</h3>
+            <p>
+                É o ramo do direito que regula as relações entre pessoas físicas e jurídicas 
+                em sua vida cotidiana. No escritório Torres Advogados Associados, oferecemos 
+                assessoria completa em questões que envolvem contratos, responsabilidade civil, 
+                direitos de família e sucessões, direito das obrigações, propriedade e muito mais. 
+                Nosso objetivo é proteger os direitos e interesses de nossos clientes com soluções 
+                jurídicas personalizadas, pautadas na ética, agilidade e eficiência. Conte conosco 
+                para garantir segurança e tranquilidade em suas relações civis.
+                <span (click)="formataWhatsapp('Direito Civil')">saiba mais...</span>
+            </p>
+        </div>    
+    }@else if(data.index === 2){
+        <div>
+            <h3 class="titulo_servico">Direito de Família</h3>
+            <p>
+                É a área do direito responsável por regulamentar as relações familiares e as questões 
+                decorrentes dessas relações, como casamento, união estável, divórcio, guarda de filhos, 
+                pensão alimentícia, partilha de bens e adoção. No Torres Advogados Associados, atuamos 
+                com sensibilidade, ética e compromisso para oferecer soluções jurídicas que preservem 
+                os direitos e o bem-estar de nossos clientes e de suas famílias. Nosso objetivo é 
+                proporcionar um atendimento humanizado e eficaz, respeitando sempre as particularidades 
+                de cada caso. Conte conosco para orientá-lo com segurança e empatia em momentos delicados 
+                e decisivos da sua vida.<span (click)="formataWhatsapp('Direito de Família')">saiba mais...</span>
+            </p>
+        </div>
+    }@else if(data.index === 3){
+        <div>
+            <h3 class="titulo_servico">Direito Criminal</h3>
+            <p>
+                É a área do direito responsável por assegurar a defesa dos direitos e 
+                garantias fundamentais dos cidadãos diante de acusações penais. No Torres 
+                Advogados Associados, atuamos com firmeza e dedicação em todas as fases do 
+                processo criminal, desde investigações preliminares até a defesa em juízo e 
+                recursos. Nosso compromisso é oferecer uma defesa técnica, estratégica e 
+                personalizada, sempre pautada pela ética e pelo respeito aos princípios 
+                constitucionais. Trabalhamos para proteger a liberdade, a dignidade e os 
+                direitos de nossos clientes, garantindo que a justiça seja plenamente aplicada. 
+                Conte com uma equipe experiente e preparada para enfrentar os desafios do direito 
+                penal com seriedade e competência. <span (click)="formataWhatsapp('Direito Criminal')">saiba mais...</span>
+            </p>
+        </div>
+    }@else if(data.index === 4){
+        <div>
+            <h3 class="titulo_servico">Direito Militar</h3>
+            <p>
+                É o ramo do direito que regula as normas e relações jurídicas envolvendo os membros 
+                das Forças Armadas e das Forças Auxiliares (Polícia Militar e Corpo de Bombeiros). 
+                No Torres Advogados Associados, oferecemos assessoria e defesa especializada em processos 
+                administrativos disciplinares (PADs), Conselhos de Disciplina, processos criminais 
+                militares e questões relativas a direitos, deveres e prerrogativas dos militares. 
+                Atuamos com compromisso, ética e conhecimento técnico para garantir que os direitos 
+                de nossos clientes sejam respeitados, preservando sua carreira e dignidade profissional. 
+                Conte com nossa experiência para enfrentar com segurança e confiança as questões do âmbito militar.
+                <span (click)="formataWhatsapp('Direito Militar')">saiba mais...</span>
+            </p>
+        </div>
+    }@else if(data.index === 5){
+        <div>
+            <h3 class="titulo_servico">Direito Eleitoral</h3>
+            <p>
+                É o ramo do direito que regula os direitos políticos, os processos eleitorais e 
+                a atuação dos candidatos, partidos e eleitores. No Torres Advogados Associados, 
+                oferecemos assessoria completa e estratégica para candidatos, partidos políticos 
+                e eleitores, garantindo conformidade com a legislação e segurança jurídica em 
+                todas as etapas do processo eleitoral.
+            </p>
+            <h6 class="subtitulo">Nossos serviços incluem:</h6>
+            <ul>
+                <li>Assessoria jurídica para registros de candidaturas e partidos;</li>
+                <li>Elaboração e análise de prestações de contas eleitorais;</li>
+                <li>Defesa em processos de impugnação de candidaturas e ações eleitorais;</li>
+                <li>Consultoria preventiva para evitar infrações e penalidades;</li>
+                <li>Atuação em ações de propaganda eleitoral e direito de resposta;</li>
+                <li>Orientação sobre financiamento de campanhas e limites legais.</li>
+            </ul>
+            <p>
+                Trabalhamos com seriedade, agilidade e conhecimento técnico para assegurar que nossos 
+                clientes enfrentem o processo eleitoral com segurança e transparência. Conte com o 
+                Torres Advogados Associados para um suporte jurídico eficiente e confiável em todas 
+                as demandas eleitorais.
+                <span (click)="formataWhatsapp('Direito Eleitoral')">saiba mais...</span>
+            </p>
+        </div>
+    }@else if(data.index === 6){
+        <div>
+            <h3 class="titulo_servico">Regularização de imóveis</h3>
+            <p>
+                É fundamental para garantir segurança jurídica em transações imobiliárias e 
+                assegurar que os bens estejam devidamente regularizados perante os órgãos competentes. 
+                No Torres Advogados Associados, oferecemos assessoria especializada para pessoas físicas 
+                e jurídicas, conduzindo processos com agilidade e atenção às especificidades de cada caso.
+            </p>
+            <h6 class="subtitulo">Nossos serviços incluem:</h6>
+            <ul>
+                <li>Regularização de imóveis urbanos e rurais;</li>
+                <li>Usucapião judicial e extrajudicial;</li>
+                <li>Retificação de áreas e registros imobiliários;</li>
+                <li>Assessoria em processos de desmembramento, loteamento e unificação de terrenos;</li>
+                <li>Orientação e acompanhamento em escrituras públicas e registros cartoriais;</li>
+                <li>Análise e elaboração de contratos imobiliários;</li>
+                <li>Regularização de construções e averbação de benfeitorias.</li>
+            </ul>
+            <p>
+                Nosso compromisso é oferecer soluções práticas e seguras para que você possa 
+                usufruir de seus bens com tranquilidade. Conte com a experiência e dedicação 
+                do Torres Advogados Associados para regularizar seu imóvel de forma eficiente 
+                e conforme a legislação vigente.
+                <span (click)="formataWhatsapp('Regularização de imóveis')">saiba mais...</span>
+            </p>
+        </div>
+    }@else if(data.index === 7){
+        <div>
+            <h3 class="titulo_servico">Inventário</h3>
+            <p>
+                é o procedimento legal utilizado para apurar os bens, direitos e dívidas deixados 
+                por uma pessoa falecida, visando à correta partilha entre os herdeiros. No Torres 
+                Advogados Associados, oferecemos assessoria especializada em inventários judiciais 
+                e extrajudiciais, com foco em agilidade, segurança jurídica e respeito ao momento 
+                delicado vivido pela família.
+            </p>
+            <h6 class="subtitulo">Nossos serviços incluem:</h6>
+            <ul>
+                <li>Planejamento sucessório para evitar conflitos futuros;</li>
+                <li>Regularização e levantamento de bens patrimoniais;</li>
+                <li>Elaboração de acordos entre herdeiros;</li>
+                <li>Assessoria na obtenção de alvarás para movimentação de contas e venda de bens;</li>
+                <li>Orientação sobre impostos e isenções relacionados ao processo sucessório.</li>
+            </ul>
+            <p>
+                Trabalhamos para tornar o processo de inventário mais rápido, transparente e 
+                menos burocrático, oferecendo soluções que visam preservar o patrimônio e os 
+                interesses de nossos clientes. Conte com a equipe do Torres Advogados Associados 
+                para um atendimento humanizado e eficiente.
+                <span (click)="formataWhatsapp('Inventário')">saiba mais...</span>
+            </p>
+        </div>
+    }@else if(data.index === 8){
+        <div>
+            <h3 class="titulo_servico">Direito Trabalhista</h3>
+            <p>
+                É o ramo do direito que regula as relações entre empregadores e empregados, 
+                assegurando direitos e deveres de ambas as partes no ambiente de trabalho. 
+                No Torres Advogados Associados, oferecemos assessoria completa e personalizada 
+                tanto para empresas quanto para trabalhadores, sempre buscando soluções eficazes 
+                e respeitando a legislação vigente.
+            </p>
+            <h6 class="subtitulo">Nossos serviços incluem:</h6>
+            <ul>
+                <li>Defesa em reclamações trabalhistas e ações judiciais;</li>
+                <li>Assessoria preventiva para empresas, visando reduzir passivos trabalhistas;</li>
+                <li>Análise e elaboração de contratos de trabalho e acordos coletivos;</li>
+                <li>Orientação sobre rescisões, demissões e verbas trabalhistas;</li>
+                <li>Atuação em casos de assédio moral, acidentes de trabalho e estabilidade;</li>
+                <li>Regularização de jornadas, horas extras e direitos previdenciários.</li>
+            </ul>
+            <p>
+                Com uma equipe experiente e comprometida, nosso objetivo é proteger os 
+                interesses dos nossos clientes, garantindo segurança jurídica e soluções 
+                práticas para os desafios das relações de trabalho. Conte com o Torres 
+                Advogados Associados para um atendimento ético, ágil e eficiente em todas 
+                as questões trabalhistas.
+                <span (click)="formataWhatsapp('Direito Trabalhista')">saiba mais...</span>
+            </p>
+        </div>
+    }@else if(data.index === 9){
+        <div>
+            <h3 class="titulo_servico">Aposentadoria</h3>
+            <p>
+                é um direito fundamental que assegura proteção e tranquilidade ao trabalhador 
+                após anos de contribuição. No Torres Advogados Associados, oferecemos assessoria 
+                especializada para orientar e conduzir processos de aposentadoria, garantindo que 
+                nossos clientes recebam os benefícios a que têm direito de forma rápida e segura.
+            </p>
+            <h6 class="subtitulo">Nossos serviços incluem:</h6>
+            <ul>
+                <li>Análise e planejamento previdenciário para a melhor aposentadoria possível;</li>
+                <li>Aposentadoria por tempo de contribuição, idade, especial, por invalidez e rural;</li>
+                <li>Revisão de benefícios para correção de valores pagos pelo INSS;</li>
+                <li>Aposentadoria para servidores públicos e militares;</li>
+                <li>Auxílio em casos de aposentadoria negada ou contestada;</li>
+                <li>Orientação sobre regras de transição e reforma da previdência.</li>
+            </ul>
+            <p>
+                Nosso compromisso é fornecer soluções práticas e seguras, acompanhando cada 
+                etapa do processo para que nossos clientes alcancem seus direitos com tranquilidade 
+                e sem complicações. Conte com a experiência do Torres Advogados Associados para 
+                garantir sua aposentadoria com segurança e agilidade.
+                <span (click)="formataWhatsapp('Aposentadoria')">saiba mais...</span>
+            </p>
+        </div>
+    }@else if(data.index === 10){
+        <div>
+            <h3 class="titulo_servico">Direito Ambiental</h3>
+            <p>
+                Tem como objetivo proteger o meio ambiente e assegurar a harmonia entre o 
+                desenvolvimento econômico e a preservação ambiental. No Torres Advogados Associados, 
+                prestamos assessoria especializada para empresas, órgãos públicos e particulares, 
+                oferecendo soluções jurídicas em conformidade com a legislação ambiental vigente.
+            </p>
+            <h6 class="subtitulo">Nossos serviços incluem:</h6>
+            <ul>
+                <li>Consultoria preventiva para adequação às normas ambientais;</li>
+                <li>Assessoria em licenciamento ambiental;</li>
+                <li>Defesa em processos administrativos e judiciais ambientais;</li>
+                <li>Elaboração e revisão de contratos com cláusulas ambientais;</li>
+                <li>Atuação em casos de infrações ambientais e contenciosos relacionados;</li>
+                <li>Orientação sobre responsabilidade socioambiental e gestão de passivos ambientais.</li>
+            </ul>
+            <p>
+                Trabalhamos com foco em prevenir riscos e buscar soluções eficazes que conciliem as 
+                necessidades dos nossos clientes com a preservação do meio ambiente. Conte com uma 
+                equipe preparada para oferecer atendimento personalizado e estratégias jurídicas seguras.
+                <span (click)="formataWhatsapp('Direito Ambiental')">saiba mais...</span>
+            </p>
+        </div>
+    }
+</div>

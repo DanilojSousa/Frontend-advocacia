@@ -1,0 +1,44 @@
+.content_dialog{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    p{
+        font-size: 15px;
+        color: rgb(116, 115, 115);
+        span{
+            color: rgb(39, 39, 114);
+            cursor: pointer;
+        }
+    }
+    .subtitulo{
+        margin-top: -10px;
+        width: 95%;
+        font-size: 15px;
+        color: rgb(116, 115, 115);
+    }
+    ul{
+        margin-top: -12px;
+    }
+    ul li{
+        font-size: 12px;
+        color: rgb(116, 115, 115);
+    }
+    .close{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        mat-icon{
+            cursor: pointer;
+        }
+        mat-icon:hover{
+            background-color: #715229;
+            color: white!important;
+            border-radius: 100%;
+        }
+    }
+    
+}

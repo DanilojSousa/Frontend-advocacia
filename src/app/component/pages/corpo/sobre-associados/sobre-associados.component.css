@@ -1,0 +1,180 @@
+#content_sobre_associados{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px 100px 0px;
+    flex-wrap: wrap;
+    .advogado{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .blocos_advogados{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .content_advogado{
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .bloco1{
+            width: 246px;
+            height: 300px;
+            margin: 0px 20px 0px 20px;
+            background-image: url("../../../../../assets/sobre/foto_advogado1.jpeg");   
+            background-size: cover;
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-position: center;
+        }
+        .bloco2{
+            width: 246px;
+            height: 300px;
+            margin: 0px 20px 0px 20px;
+            background-image: url("../../../../../assets/sobre/foto_advogado2.jpeg");  
+            background-size: cover;
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-position: center;         
+        }
+        .bloco_sobrepor {
+            width: 246px;
+            height: 0px;
+            background-color: rgb(97, 95, 95, 0.7);
+            transition: height 0.5s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .contato{
+                display: none;
+                width: 100%;
+                color: white;
+            }
+        }
+        .bloco1:hover, .bloco2:hover{
+            .bloco_sobrepor{
+                height: 300px;
+                .contato{
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    mat-icon{
+                        padding-right: 5px;
+                        color: white; 
+                    }
+                }
+            }
+        }
+        .caixa_texto{
+            width: 220px;
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: auto;
+            margin-top: -70px;
+            h3, h4{
+                margin: 10px;
+                color: rgba(255, 255, 255, 0.6);
+            }
+            h3{
+                font-size: 16px;
+            }
+            h4{
+                font-size: 14px;
+            }
+            .divider{
+                width: 50%;
+                margin: 0;
+            }
+        }
+    }
+    .informacoes_advogados{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        h3{
+            margin-bottom: 0px;
+        }
+        h6{
+            margin-top: 5px; 
+        }
+        p{
+            width: 80%;
+            color: rgb(73, 72, 72);
+            span{
+                cursor: pointer;
+                color: rgb(62, 62, 150);
+            }
+        }
+
+    }
+}
+
+@media (max-width: 997px) {
+    .content_advogado{
+        display: block!important;
+        justify-content: center!important;
+    }
+    .bloco{
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: center!important;
+    }
+    .informacoes_advogados{
+        margin-top: 20px;
+    }
+    .conteudo_texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 878px) {
+    #content_sobre_associados{
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    .blocos_advogados{
+        margin: auto!important;
+    }
+    .informacoes_advogados{
+        width: 90%!important;
+        margin: auto!important;
+        margin-top: 50px!important;
+        div{
+            display: flex!important;
+            flex-direction: column!important;
+            align-items: center!important;
+        }
+    }
+}
+@media (max-width: 560px) {
+    .blocos_advogados{
+        width: 100%!important;
+        display: flex!important;
+        flex-direction: column!important;
+        justify-content: center!important;
+        align-items: center!important;
+    }
+    .caixa_texto{
+        margin-bottom: 20px!important;
+    }
+    .informacoes_advogados{
+        width: 100%!important;
+    }
+}
+@media (max-width: 411px) {
+    .advogado{
+        width: 90%!important;
+    }
+}

@@ -1,0 +1,183 @@
+.content_rodape{
+    width: 100%;
+    background-color: #050505;
+    flex-wrap: wrap;
+    .conteudo{
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: rgb(165, 163, 163);
+        .img{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            .imagens{
+                width: 200px;
+                height: 100px;
+                background-image: url("../../../../assets/logo/logo.png");   
+                background-size: cover; /* Ajusta a imagem para caber totalmente no elemento */
+                background-repeat: no-repeat; /* Evita repetição da imagem */
+                background-position: center;
+            }
+        }
+        .dados_empresa{
+            margin-top: 50px;
+            width: 70%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            .endereco{
+                p{
+                    margin: 0px;
+                    font-family: sans-serif!important;
+                }
+            }
+            .contato{
+                display: flex;
+                flex-direction: column;
+                .telefone, .email{
+                    display: flex;
+                    align-items: center;
+                    mat-icon{
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .rede_social_bloco{
+                display: flex;
+                flex-direction: column;
+                .rede_social{
+                    display: flex;
+                    .instagran{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .rede_social{
+        display: flex;
+        .socialContainer {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition-duration: .3s;
+            border-radius: 100%;
+            background-color: rgb(65, 63, 63);
+            }
+            /* instagram*/
+            .instagran .containerOne:hover {
+            background-color: #d62976;
+            transition-duration: .3s;
+            }
+            
+            /* Whatsapp*/
+            .whatssap .containerFour:hover {
+            background-color: #128C7E;
+            transition-duration: .3s;
+            }
+            
+            .containerThree:hover{
+            background-color: #1a5bd3;
+            transition-duration: .3s;
+            }
+            
+            .socialContainer:active {
+            transform: scale(0.9);
+            transition-duration: .3s;
+            }
+            
+            .socialSvg {
+            width: 20px;
+            }
+            
+            .socialSvg path {
+            fill: rgb(165, 163, 163);
+            }
+            
+            .socialContainer:hover .socialSvg {
+            animation: slide-in-top 0.3s both;
+            }
+            
+            @keyframes slide-in-top {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+    .dados_desenvolvedor{
+        width: 100%;
+        padding: 5px 0px 5px 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: rgb(202, 198, 198);
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            color: rgb(202, 198, 198);
+        }
+        a:hover{
+            cursor: pointer;
+            color: black;
+        }
+    }
+}
+@media (max-width: 1064px) {
+    .dados_desenvolvedor{
+        display: flex!important;
+        flex-direction: column!important;
+        text-align: center;
+    }
+}
+@media (max-width: 908px) {
+    .conteudo{
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    .dados_empresa{
+        width: 100%!important;
+    }
+}
+@media (max-width: 634px) {
+    .dados_empresa{
+        width: 100%!important;
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: center!important;
+    }
+    .endereco, .contato, .rede_social_bloco{
+        width: 45%!important;
+    }
+}
+@media (max-width: 474px) {
+    .endereco, .contato, .rede_social_bloco{
+        width: 55%!important;
+
+    }
+}
+@media (max-width: 474px) {
+    .endereco, .contato, .rede_social_bloco{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img{
+        width: 100%!important;
+    }
+}

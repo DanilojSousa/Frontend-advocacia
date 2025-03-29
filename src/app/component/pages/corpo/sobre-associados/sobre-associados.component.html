@@ -1,0 +1,117 @@
+<div id="content_sobre_associados">
+    <div class="advogado">
+        <h3 class="titulo_sobre_adovogado">Advogados</h3>
+        <p>
+            &nbsp;&nbsp;&nbsp;Os advogados desempenham um papel fundamental, 
+            garantindo segurança jurídica, conformidade regulatória e prevenindo 
+            riscos legais. Sua atuação vai além da defesa em processos judiciais, 
+            abrangendo áreas como contratos, compliance, direito trabalhista e tributário.
+        </p>
+    </div>
+    <div class="blocos_advogados">
+        <div class="content_advogado">
+            <div class="bloco">
+                <div class="bloco1">
+                    <div class="bloco_sobrepor">   
+                        <div>                
+                            <div class="contato">
+                                <mat-icon>call</mat-icon>
+                                {{empresa.ADVOGADO_1_TELEFONE}}
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="caixa_texto">
+                    <h3>{{empresa.ADVOGADO_1_ABREVIADO}}</h3>
+                    <div class="divider"></div>
+                    <h4>OAB/SC {{empresa.ADVOGADO_1_OAB}}</h4>
+                </div>
+            </div>
+            <div class="informacoes_advogados">
+                <div class="conteudo_texto">
+                    <h3 class="titulo_sobre_adovogado">{{empresa.ADVOGADO_1}}</h3>
+                    <h6 class="titulo_sobre_adovogado">{{calcularIdade(eloy)}} anos</h6>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;É um advogado especialista nas áreas de Direito Criminal 
+                        e Direito de Família, com vasta experiência e atuação destacada no ramo 
+                        jurídico. Formado em Direito pela Universidade do Sul de Santa Catarina 
+                        (UNISUL) no ano de 2009, exerce a advocacia desde 2010, consolidando-se 
+                        como uma referência em seu campo de atuação.
+                        Atualmente, é sócio-proprietário do renomado escritório Torres Advogados 
+                        Associados, onde, juntamente com sua equipe, presta serviços em diversas 
+                        áreas do Direito, incluindo Direito Criminal, Civil, Família, Previdenciário, 
+                        Militar e Empresarial...
+                        @if(!mostraTextoAdvogado1){
+                            <span (click)="mostrarTexto(1)">ler mais</span>
+                        }@else{
+                            Além disso, é sócio-proprietário da Torres Negócios 
+                            Imobiliários, atuando na regularização de imóveis e em diversas questões do 
+                            mercado imobiliário.
+                            Sua dedicação ao Direito também se reflete em sua atuação institucional. 
+                            Atualmente, é membro da Comissão Estadual de Direito Criminal, Direito 
+                            Eleitoral e Direito Militar da OAB Santa Catarina, contribuindo ativamente 
+                            para o desenvolvimento e aprimoramento dessas áreas.
+                            Nascido em 10 de fevereiro de 1985, é também um dedicado pai de família, 
+                            buscando sempre equilibrar sua vida profissional com os valores familiares, 
+                            fundamentais em sua trajetória pessoal e profissional.
+                            Com uma carreira pautada na excelência e no comprometimento com seus 
+                            clientes, Eloy Eduardo Machado, segue atuando com determinação e seriedade
+                            na defesa dos direitos e interesses daqueles que representa.
+                            <span (click)="mostrarTexto(1)">ler menos</span>
+                        }
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="content_advogado">
+            <div class="bloco">
+                <div class="bloco2">
+                    <div class="bloco_sobrepor">
+                        <div> 
+                            <div class="contato">
+                                <mat-icon>call</mat-icon>
+                                {{empresa.ADVOGADO_2_TELEFONE}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa_texto">
+                    <h3>{{empresa.ADVOGADO_2_ABREVIADO}}</h3>
+                    <div class="divider"></div>
+                    <h4>OAB/SC {{empresa.ADVOGADO_2_OAB}}</h4>
+                </div>
+            </div>
+            <div class="informacoes_advogados">
+                <div class="conteudo_texto">
+                    <h3 class="titulo_sobre_adovogado">{{empresa.ADVOGADO_2}}</h3>
+                    <!--<h6 class="titulo_sobre_adovogado">{{calcularIdade(gil)}} anos</h6>-->
+                    <p>
+                        &nbsp;&nbsp;&nbsp;é Advogado (Direito-Unisul), Perito e Avaliador de Imóveis
+                        (CNAI), Graduado em Ciências Contábeis (UFSC) e Técnico em Transações
+                        Imobiliárias (IBREP). É Especialista em Direito Penal, Processual e Disciplinar Militar
+                        (ETNA), Segurança Pública e Polícia Comunitária (UNISUL), além de Pós Graduando
+                        em grau de Especialista em Polícia Judiciária Militar, Direito Eleitoral e Direito
+                        Previdenciário. Membro das Comissões de Direito Militar e Direito de Segurança,
+                        Criminalidade e Violência Pública da OAB/SC; Membro das Comissões de Direito
+                        Consumidor e Direito Eleitoral da OAB/SC subseção de Palhoça/SC. Registrado no
+                        CRC/SC, CNAI e CRECI/SC. 
+                        @if(!mostraTextoAdvogado2){
+                            <span (click)="mostrarTexto(2)">ler mais</span>
+                        }@else{
+                            Foi Policial Militar da PMSC por mais de 30 anos, com
+                        vasto conhecimento nos regulamentos internos e direito dos Militares, além de ter sido
+                        Coordenador Jurídico da Associação dos Militares Estaduais – APRASC.
+                        Sócio proprietário do escritório Torres Advogados Associados, prestando assessoria,
+                        consultoria e demais serviços na área do Direito, com especialistas em Direito Militar,
+                        Penal, Consumidor, Família, Sucessões e Imobiliário.
+                        Também e sócio proprietário da Torres Negócios Imobiliários atuando no mercado
+                        imobiliário com Regularização e Avaliação de Imóveis.
+                        Catarinense desde 1973, é um apaixonado por nossa cultura, futebol e nossa gente
+                            <span (click)="mostrarTexto(2)">ler menos</span>
+                        }
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
