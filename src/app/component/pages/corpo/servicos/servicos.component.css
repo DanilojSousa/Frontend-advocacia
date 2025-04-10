@@ -174,3 +174,8 @@
         margin-top: 50px;
     }
 }
+@media (max-width: 330px) {
+    .blocos{
+        margin-top: 10px;
+    }
+}

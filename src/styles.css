@@ -42,6 +42,7 @@ a, p, button, h1, h2, h3, h4, h5,h6{
 .menus a{
     color: #715229!important;
 }
-.mat-dialog-container{
-    max-height: 90vh!important; 
+.mat-mdc-dialog-container{
+    max-height: 95vh!important; 
+    overflow: auto;
 }

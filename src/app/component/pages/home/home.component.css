@@ -244,5 +244,9 @@ mat-menu{
     }
 }
 
-
-
+@media (max-width: 350px) {
+    .menu{
+        display: flex!important;
+        flex-direction: column;
+    }
+}
